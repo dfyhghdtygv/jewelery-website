@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+        }
+
+
+.scrolling-text {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.scrolling-text p {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-text 15s linear infinite;
+  font-size: 25px;
+  font-weight: bolder;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+@keyframes scroll-text {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+.hero-collect{
+    background-color: #beb8b8;
+}
+.hero-h2{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 60px;
+   font-weight: bolder;
+   margin-top: 90px;
+   margin-bottom: 90px;
+   background-color: white;
+   padding-bottom: 80px;
+   color: black;
+}
+.hero-image{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+     
+}
+.hero-image{
+    border-radius: 20px;
+    gap: 15px;
+    margin-top: 30px;
+margin-left: 20px;
+
+}
+
+  
+
+
+  .online {
+    background-color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.delivery {
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.free-shipping-text {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero-h3 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.para {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300);
+
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+.container{
+            padding: 25px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: rgb(12, 12, 12);
+            background-color:rgb(209, 201, 201);
+        }
+        .logo{
+            font-weight: bold;
+            font-size: 39px;
+            color: black;
+        }
+        .nav_list{
+            display: flex;
+           text-decoration: none;
+           list-style: none;
+        }
+        .nav_list li{
+        padding-right: 30px;
+        font-size: 26px;
+        } 
+.list{
+    color: black;
+      text-decoration: none;
+           list-style: none;
+}
+.list:hover{
+    color: #ffffff;
+   
+   
+}
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-logo,
+.footer-links,
+.footer-social {
+  flex: 1 1 250px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 8px 0;
+}
+
+.footer-links ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #fff;
+}
+
+.footer-social .social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.footer-social .social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-social .social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* Text animation */
+.text-animation {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- nav-bar -->
+    <div class="container">
+        <h1 class="logo">Chic charms</h1>
+        <ul class="nav_list">
+            <li><a class="list" href="#home">Home</a></li>
+            <li><a class="list" href="#product">Product</a></li>
+            <li><a class="list"  href="#collection">Feautures Collection</a></li>
+            <li><a class="list" href="#deal">Online Delievery</a></li>
+            <li><a class="list" href="#footer">Contact Us</a></li>
+        </ul>
+    </div>
+<!-- nav-bar-end -->
+
+<!-- home -->
+ <div class="home">
+ <img src="https://nainikas.com/wp-content/uploads/2023/07/nainikas-banner-1.jpg" width="1570vw" height="600vh"  alt="">
+</div>
+        <div class="scrolling-text"  style="white-space: pre; margin-bottom: 30px;">
+  <p>* Modern Jewelery                    * Modern Jewelery                    * Modern Jewelery                     * Modern Jewelewry                      * Modern Jewelewry                     * Modern Jewelewry                     * Modern Jewelewry                     * Modern Jewelewry</p>
+</div>
+<!-- products -->
+<div class="products" id="product">
+    <img src="./il_fullxfull.4798259924_7y71.webp" width="1570vw" height="600vh"  margin-top:30px ;
+    margin-right:0px; alt=""> 
+</div>
+<!-- feautures collection -->
+
+ <div class="hero-collect">
+    <h1 class="hero-h2" id="collection">Feautures Collection </h1>
+    <div class="hero-image" id="hero-collect">
+    <img  src="https://m.media-amazon.com/images/I/81Z7cQqwRwL.jpg"   width="350px" height="350px" alt="">
+    <img src="https://image.doba.com/dg7-UICRvDejaPby/fashion-women-necklace-korea-style-new-butterfly-pendant-necklace-gift-for-girl-cute-lovely-neck-jewelry-wholesale-dropshipping.webp" width="350px" height="350px" class="hover" alt="">
+    <img src="https://images.lifestyleasia.com/wp-content/uploads/sites/6/2022/09/26205227/286881584_1221434935348814_4868147812537782427_n.jpg"    width="350px" height="350px" class="hover" alt="">
+    <img src="https://img.kwcdn.com/product/open/2e9448f435ef4a7ca19773c963fe1835-goods.jpeg?imageView2/2/w/500/q/60/format/webp"   width="350px" height="350px"  class="hover" alt="">
+    </div>
+   
+
+   
+    <div class="hero-image">
+    <img  src="https://shoppecue.com/cdn/shop/files/WhatsAppImage2024-08-12at4.44.38PM.jpg?v=1728167476"   width="350px" height="350px" alt="">
+    <img src="https://indsmartcart.com/wp-content/uploads/2023/12/iscp6065.jpeg" width="350px" height="350px" class="hover" alt="">
+    <img src="https://jewelsmars.com/cdn/shop/files/MinimalHeartBlingEarrings...jpg?v=1703943240&width=533"    width="350px" height="350px" class="hover" alt="">
+    <img src="https://ae01.alicdn.com/kf/S27cc7291accb4124961bd06b08b5ecf9U.jpg"   width="350px" height="350px"  class="hover" alt="">
+    </div>
+ 
+ <div class="online" id="deal">
+  <h1 class="delivery" id="hero-online">Online Delivery</h1>
+  
+  <img src="https://imgd.aeplcdn.com/1280x720/n/cw/ec/202895/rebel-500-right-rear-three-quarter-2.jpeg?isig=0" class="bike" alt="Delivery Bike Image">
+
+  <div class="free-shipping-text">
+    <h2 class="hero-h3">Free Shipping</h2>
+    <p class="para">
+      Enjoy fast and free shipping on every order, nationwide! No hidden fees or extra charges—just simple, 
+      hassle-free delivery straight to your doorstep. Shop with confidence and save more with our free shipping offer.
+      Order now and take advantage of this amazing deal!
+    </p>
+    <button class="btn">See Details</button>
+  </div>
+</div>
+
+<!-- delievery end -->
+<!-- contact us -->
+<footer class="footer" id="footer">
+  <div class="footer-container">
+    <div class="footer-logo text-animation">
+      <h2>MyWebsite</h2>
+      <p>Simple and elegant footer with animation.</p>
+    </div>
+
+    <div class="footer-links text-animation">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social text-animation">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq_QgDZ7kAHgCCmF1wkNwggFhqSOplizpJtg&s" alt="Facebook" /></a>
+        <a href="#"><img src="https://static.vecteezy.com/system/resources/thumbnails/006/057/998/small/twitter-logo-on-transparent-background-free-vector.jpg" alt="Twitter" /></a>
+        <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR4n4ZZfsB7E7PV1NSmfLg3Rvcg4OOF5ukpg&s" alt="Instagram" /></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom text-animation">
+    <p>&copy; 2025 MyWebsite. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
